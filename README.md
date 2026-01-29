@@ -86,7 +86,7 @@ graph LR
 - Extracts structured data from clean and scanned PDFs  
 - Handles rotations, stamps, and noisy layouts  
 - Outputs field-level confidence scores  
-**Model:** Gemini 1.5 Flash  
+**Model:** Gemini 
 
 ---
 
@@ -137,7 +137,7 @@ Decisions are **confidence-driven**, not rule-forced.
 ### 1️⃣ Clone & Setup
 
 ```bash
-git clone https://github.com/yourusername/safepay.git
+git clone https://github.com/Rajesh-007-dl/SafePay-Agent.git
 cd safepay
 ```
 
@@ -226,5 +226,6 @@ uv run streamlit run dashboard.py
 - Agents > scripts  
 
 ---
+
 
 
