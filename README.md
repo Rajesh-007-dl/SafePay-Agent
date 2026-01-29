@@ -66,7 +66,8 @@ A **Streamlit dashboard** visualizes the full reasoning process, acting as a con
 
 SafePay is implemented using **LangGraph**, modeling the workflow as a **state machine**, not a linear pipeline.
 
-<img width="2816" height="1536" alt="architecture" src="https://github.com/user-attachments/assets/948cc060-f895-4405-82e5-bb1107c1aee7" />
+<img width="2816" height="1536" alt="Gemini_Generated_Image_a76pmba76pmba76p" src="https://github.com/user-attachments/assets/28eae5c6-d29c-4e12-b02f-4807d0e86839" />
+
 
 
 ---
@@ -217,6 +218,7 @@ uv run streamlit run dashboard.py
 - Agents > scripts  
 
 ---
+
 
 
 
