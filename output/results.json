@@ -1,0 +1,462 @@
+[
+  {
+    "source_file": "Invoice_1_Baseline.pdf",
+    "invoice_id": "INV-2024-1001",
+    "processing_results": {
+      "extraction_confidence": 0.99,
+      "extracted_data": {
+        "supplier": "PharmaChem Supplies Ltd",
+        "po_reference": "PO-2024-001",
+        "line_items": [
+          {
+            "description": "Paracetamol BP 500mg",
+            "quantity": 50.0,
+            "unit_price": 125.0,
+            "line_total": 6250.0,
+            "confidence": 1.0
+          },
+          {
+            "description": "Microcrystalline Cellulose",
+            "quantity": 100.0,
+            "unit_price": 8.5,
+            "line_total": 850.0,
+            "confidence": 1.0
+          },
+          {
+            "description": "Magnesium Stearate Ph Eur",
+            "quantity": 25.0,
+            "unit_price": 24.0,
+            "line_total": 600.0,
+            "confidence": 1.0
+          },
+          {
+            "description": "Titanium Dioxide E171",
+            "quantity": 15.0,
+            "unit_price": 18.5,
+            "line_total": 277.5,
+            "confidence": 1.0
+          }
+        ]
+      },
+      "matching_results": {
+        "matched_po": "PO-2024-001",
+        "match_reasoning": "Identified specific PO reference PO-2024-001.",
+        "candidates_considered": [
+          {
+            "po_number": "PO-2024-001",
+            "confidence": 0.95,
+            "method": "exact_ref",
+            "reasoning": "Identified specific PO reference PO-2024-001."
+          }
+        ]
+      },
+      "discrepancies": [],
+      "recommended_action": "auto_approve",
+      "agent_reasoning": "Perfect 3-way match (Invoice \u2194 PO \u2194 Math).",
+      "agent_execution_trace": [
+        {
+          "agent": "Document Intelligence",
+          "status": "Success",
+          "confidence": 0.99,
+          "detail": "Extracted 4 line items. Notes: Please quote invoice number on all payments. Thank you for your business."
+        },
+        {
+          "agent": "Extraction Verifier",
+          "status": "Failed",
+          "confidence": 1.0,
+          "detail": "Found math errors: ['Simulated verification failure to demonstrate self-correction loop.']"
+        },
+        {
+          "agent": "Orchestrator",
+          "status": "Looping",
+          "confidence": 1.0,
+          "detail": "Triggering re-extraction due to math verification failure."
+        },
+        {
+          "agent": "Document Intelligence",
+          "status": "Success",
+          "confidence": 0.99,
+          "detail": "Extracted 4 line items. Notes: Please quote invoice number on all payments. Thank you for your business."
+        },
+        {
+          "agent": "Extraction Verifier",
+          "status": "Passed",
+          "confidence": 1.0,
+          "detail": "Math checks passed."
+        },
+        {
+          "agent": "Matching Agent",
+          "status": "Success",
+          "confidence": 0.95,
+          "detail": "Identified specific PO reference PO-2024-001."
+        },
+        {
+          "agent": "Discrepancy Detector",
+          "status": "Clean",
+          "confidence": 1.0,
+          "detail": "Found 0 discrepancies."
+        },
+        {
+          "agent": "Resolution Agent",
+          "status": "Complete",
+          "confidence": 1.0,
+          "detail": "Action: auto_approve. Reason: Perfect 3-way match (Invoice \u2194 PO \u2194 Math)."
+        }
+      ]
+    }
+  },
+  {
+    "source_file": "Invoice_2_Scanned.pdf",
+    "invoice_id": "BA-2024-2156",
+    "processing_results": {
+      "extraction_confidence": 0.88,
+      "extracted_data": {
+        "supplier": "BioActive Materials UK",
+        "po_reference": "PO-2024-002",
+        "line_items": [
+          {
+            "description": "Ascorbic Acid USP",
+            "quantity": 75.0,
+            "unit_price": 32.0,
+            "line_total": 2400.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Citric Acid Anhydrous",
+            "quantity": 100.0,
+            "unit_price": 12.5,
+            "line_total": 1250.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Sodium Benzoate",
+            "quantity": 50.0,
+            "unit_price": 15.8,
+            "line_total": 790.0,
+            "confidence": 0.99
+          }
+        ]
+      },
+      "matching_results": {
+        "matched_po": "PO-2024-002",
+        "match_reasoning": "Identified specific PO reference PO-2024-002.",
+        "candidates_considered": [
+          {
+            "po_number": "PO-2024-002",
+            "confidence": 0.95,
+            "method": "exact_ref",
+            "reasoning": "Identified specific PO reference PO-2024-002."
+          }
+        ]
+      },
+      "discrepancies": [],
+      "recommended_action": "auto_approve",
+      "agent_reasoning": "Perfect 3-way match (Invoice \u2194 PO \u2194 Math).",
+      "agent_execution_trace": [
+        {
+          "agent": "Document Intelligence",
+          "status": "Success",
+          "confidence": 0.88,
+          "detail": "Extracted 3 line items. Notes: All prices in GBP. E&OE. Thank you for your custom. [Note: Confidence capped due to scan.]"
+        },
+        {
+          "agent": "Extraction Verifier",
+          "status": "Passed",
+          "confidence": 1.0,
+          "detail": "Math checks passed."
+        },
+        {
+          "agent": "Matching Agent",
+          "status": "Success",
+          "confidence": 0.95,
+          "detail": "Identified specific PO reference PO-2024-002."
+        },
+        {
+          "agent": "Discrepancy Detector",
+          "status": "Clean",
+          "confidence": 1.0,
+          "detail": "Found 0 discrepancies."
+        },
+        {
+          "agent": "Resolution Agent",
+          "status": "Complete",
+          "confidence": 1.0,
+          "detail": "Action: auto_approve. Reason: Perfect 3-way match (Invoice \u2194 PO \u2194 Math)."
+        }
+      ]
+    }
+  },
+  {
+    "source_file": "Invoice_3_Different_Format.pdf",
+    "invoice_id": "MC-INV-3421",
+    "processing_results": {
+      "extraction_confidence": 0.99,
+      "extracted_data": {
+        "supplier": "MEDCHEM INGREDIENTS",
+        "po_reference": "PO-2024-003",
+        "line_items": [
+          {
+            "description": "Pregelatinized Starch",
+            "quantity": 200.0,
+            "unit_price": 6.75,
+            "line_total": 1350.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Gelatin Type A 200 Bloom",
+            "quantity": 50.0,
+            "unit_price": 45.0,
+            "line_total": 2250.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Lactose Monohydrate Mesh 200",
+            "quantity": 150.0,
+            "unit_price": 11.2,
+            "line_total": 1680.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Croscarmellose Sodium",
+            "quantity": 30.0,
+            "unit_price": 28.5,
+            "line_total": 855.0,
+            "confidence": 0.99
+          }
+        ]
+      },
+      "matching_results": {
+        "matched_po": "PO-2024-003",
+        "match_reasoning": "Identified specific PO reference PO-2024-003.",
+        "candidates_considered": [
+          {
+            "po_number": "PO-2024-003",
+            "confidence": 0.95,
+            "method": "exact_ref",
+            "reasoning": "Identified specific PO reference PO-2024-003."
+          }
+        ]
+      },
+      "discrepancies": [],
+      "recommended_action": "auto_approve",
+      "agent_reasoning": "Perfect 3-way match (Invoice \u2194 PO \u2194 Math).",
+      "agent_execution_trace": [
+        {
+          "agent": "Document Intelligence",
+          "status": "Success",
+          "confidence": 0.99,
+          "detail": "Extracted 4 line items. Notes: Payment Terms: 30 days net. Bank Details: Barclays Bank plc, Sort: 20-67-59, Acct: 10293847. Please reference invoice number on payment."
+        },
+        {
+          "agent": "Extraction Verifier",
+          "status": "Passed",
+          "confidence": 1.0,
+          "detail": "Math checks passed."
+        },
+        {
+          "agent": "Matching Agent",
+          "status": "Success",
+          "confidence": 0.95,
+          "detail": "Identified specific PO reference PO-2024-003."
+        },
+        {
+          "agent": "Discrepancy Detector",
+          "status": "Clean",
+          "confidence": 1.0,
+          "detail": "Found 0 discrepancies."
+        },
+        {
+          "agent": "Resolution Agent",
+          "status": "Complete",
+          "confidence": 1.0,
+          "detail": "Action: auto_approve. Reason: Perfect 3-way match (Invoice \u2194 PO \u2194 Math)."
+        }
+      ]
+    }
+  },
+  {
+    "source_file": "Invoice_4_Price_Trap.pdf",
+    "invoice_id": "GPS-8842",
+    "processing_results": {
+      "extraction_confidence": 0.99,
+      "extracted_data": {
+        "supplier": "Global Pharma Supply Co.",
+        "po_reference": "PO-2024-004",
+        "line_items": [
+          {
+            "description": "Ibuprofen BP 200mg",
+            "quantity": 100.0,
+            "unit_price": 88.0,
+            "line_total": 8800.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Povidone K30 USP",
+            "quantity": 75.0,
+            "unit_price": 22.0,
+            "line_total": 1650.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Sodium Starch Glycolate",
+            "quantity": 40.0,
+            "unit_price": 19.5,
+            "line_total": 780.0,
+            "confidence": 0.99
+          }
+        ]
+      },
+      "matching_results": {
+        "matched_po": "PO-2024-004",
+        "match_reasoning": "Identified specific PO reference PO-2024-004.",
+        "candidates_considered": [
+          {
+            "po_number": "PO-2024-004",
+            "confidence": 0.95,
+            "method": "exact_ref",
+            "reasoning": "Identified specific PO reference PO-2024-004."
+          }
+        ]
+      },
+      "discrepancies": [
+        {
+          "type": "price_mismatch",
+          "severity": "medium",
+          "field": "line_item_0_price",
+          "details": "Unit price deviation of 10.0% (88.0 vs 80.0) exceeds standard tolerance.",
+          "invoice_value": 88.0,
+          "po_value": 80.0,
+          "confidence": 0.95
+        }
+      ],
+      "recommended_action": "flag_for_review",
+      "agent_reasoning": "Price variance detected (88.0 vs 80.0).",
+      "agent_execution_trace": [
+        {
+          "agent": "Document Intelligence",
+          "status": "Success",
+          "confidence": 0.99,
+          "detail": "Extracted 3 line items. Notes: This invoice is payable within 30 days. Late payment subject to interest charges."
+        },
+        {
+          "agent": "Extraction Verifier",
+          "status": "Passed",
+          "confidence": 1.0,
+          "detail": "Math checks passed."
+        },
+        {
+          "agent": "Matching Agent",
+          "status": "Success",
+          "confidence": 0.95,
+          "detail": "Identified specific PO reference PO-2024-004."
+        },
+        {
+          "agent": "Discrepancy Detector",
+          "status": "Flagged",
+          "confidence": 1.0,
+          "detail": "Found 1 discrepancies. Types: price_mismatch"
+        },
+        {
+          "agent": "Resolution Agent",
+          "status": "Complete",
+          "confidence": 1.0,
+          "detail": "Action: flag_for_review. Reason: Price variance detected (88.0 vs 80.0)."
+        }
+      ]
+    }
+  },
+  {
+    "source_file": "Invoice_5_Missing_PO.pdf",
+    "invoice_id": "EC-7721",
+    "processing_results": {
+      "extraction_confidence": 0.99,
+      "extracted_data": {
+        "supplier": "EuroChem Trading Ltd",
+        "po_reference": null,
+        "line_items": [
+          {
+            "description": "Mannitol Granular USP",
+            "quantity": 120.0,
+            "unit_price": 14.5,
+            "line_total": 1740.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Talc Pharma Grade",
+            "quantity": 60.0,
+            "unit_price": 8.8,
+            "line_total": 528.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Colloidal Silicon Dioxide",
+            "quantity": 25.0,
+            "unit_price": 35.0,
+            "line_total": 875.0,
+            "confidence": 0.99
+          },
+          {
+            "description": "Hypromellose 2910",
+            "quantity": 80.0,
+            "unit_price": 18.75,
+            "line_total": 1500.0,
+            "confidence": 0.99
+          }
+        ]
+      },
+      "matching_results": {
+        "matched_po": null,
+        "match_reasoning": "Top matches had low confidence.",
+        "candidates_considered": [
+          {
+            "po_number": "PO-2024-005",
+            "confidence": 0.6,
+            "method": "fuzzy_hybrid",
+            "reasoning": "Supplier: EuroChem Trading Ltd (Score: 0.60)"
+          },
+          {
+            "po_number": "PO-2024-013",
+            "confidence": 0.47,
+            "method": "fuzzy_hybrid",
+            "reasoning": "Supplier: United Chemical Traders (Score: 0.47)"
+          }
+        ]
+      },
+      "discrepancies": [],
+      "recommended_action": "escalate_to_human",
+      "agent_reasoning": "System uncertainty regarding PO match.",
+      "agent_execution_trace": [
+        {
+          "agent": "Document Intelligence",
+          "status": "Success",
+          "confidence": 0.99,
+          "detail": "Extracted 4 line items. Notes: PO Reference is missing. The document mentions 'Please contact accounts@eurochem-trading.co.uk if you require a PO number to be added.'"
+        },
+        {
+          "agent": "Extraction Verifier",
+          "status": "Passed",
+          "confidence": 1.0,
+          "detail": "Math checks passed."
+        },
+        {
+          "agent": "Matching Agent",
+          "status": "No Match",
+          "confidence": 0.0,
+          "detail": "Top matches had low confidence."
+        },
+        {
+          "agent": "Discrepancy Detector",
+          "status": "Clean",
+          "confidence": 1.0,
+          "detail": "Found 0 discrepancies."
+        },
+        {
+          "agent": "Resolution Agent",
+          "status": "Complete",
+          "confidence": 1.0,
+          "detail": "Action: escalate_to_human. Reason: System uncertainty regarding PO match."
+        }
+      ]
+    }
+  }
+]

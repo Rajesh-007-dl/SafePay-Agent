@@ -1,0 +1,26 @@
+# --- Security (CRITICAL) ---
+.env
+.env.local
+*.key
+secrets.json
+
+# --- Python & Environment ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+*.swp
+
+# --- Generated Data ---
+# We ignore the vector store because it is large and can be rebuilt
+vectorstore/
+# We ignore temp files, but KEEP output/results.json for the demo
+*.log
+*.tmp
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
