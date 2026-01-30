@@ -7,6 +7,9 @@ Rather than relying on brittle, linear automation pipelines, SafePay is built as
 This project was built as a **self-initiated personal exploration** into agentic AI, document intelligence, and explainable decision-making for financial workflows.
 
 ---
+[![SafePay Demo](https://github.com/Rajesh-007-dl/SafePay-Agent/blob/main/media/architecture.png)](<https://github.com/Rajesh-007-dl/SafePay-Agent/blob/main/media/Demo%20video.mp4>)
+
+---
 
 ## 🌟 Key Capabilities
 
@@ -218,6 +221,7 @@ uv run streamlit run dashboard.py
 - Agents > scripts  
 
 ---
+
 
 
 
