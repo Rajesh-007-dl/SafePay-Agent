@@ -11,14 +11,9 @@ This project was built as a **self-initiated personal exploration** into agentic
 
 A short walkthrough demonstrating how **SafePay** reasons through real-world invoice reconciliation scenarios using a self-correcting, multi-agent workflow.
 
-▶️ **Watch the demo:**  
-[SafePay Demo Video](https://github.com/Rajesh-007-dl/SafePay-Agent/blob/main/media/Demo%20video.mp4)
 
-## 📺 Demo Video
+https://github.com/user-attachments/assets/b93164ff-d13b-42f2-b731-c24648b005d2
 
-[![SafePay Demo](./demo/demo_thumbnail.png)](https://github.com/Rajesh-007-dl/SafePay-Agent/blob/main/media/Demo%20video.mp4)
-
-A walkthrough showcasing SafePay’s self-correcting agentic workflow, financial safety mechanisms, and explainable decisions.
 
 ---
 
@@ -232,6 +227,7 @@ uv run streamlit run dashboard.py
 - Agents > scripts  
 
 ---
+
 
 
 
