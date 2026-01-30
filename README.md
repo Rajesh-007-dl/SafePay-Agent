@@ -32,7 +32,7 @@ This allows SafePay to recover gracefully when:
 
 ---
 
-### 🛡️ “Humble” Confidence Modeling  
+### 🛡️ Confidence Modeling  
 SafePay explicitly models uncertainty instead of assuming perfect automation:
 
 - Scanned or rotated invoices automatically **cap confidence scores**
@@ -218,6 +218,7 @@ uv run streamlit run dashboard.py
 - Agents > scripts  
 
 ---
+
 
 
 
