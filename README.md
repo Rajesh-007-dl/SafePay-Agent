@@ -7,15 +7,6 @@ Rather than relying on brittle, linear automation pipelines, SafePay is built as
 This project was built as a **self-initiated personal exploration** into agentic AI, document intelligence, and explainable decision-making for financial workflows.
 
 ---
-## 📺 Demo Video
-
-A short walkthrough demonstrating how **SafePay** reasons through real-world invoice reconciliation scenarios using a self-correcting, multi-agent workflow.
-
-
-https://github.com/user-attachments/assets/b93164ff-d13b-42f2-b731-c24648b005d2
-
-
----
 
 ## 🌟 Key Capabilities
 
@@ -227,6 +218,7 @@ uv run streamlit run dashboard.py
 - Agents > scripts  
 
 ---
+
 
 
 
